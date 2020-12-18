@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gama Academy - Contato</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+
+<body>
+    <table border="0" width=100% class="menu">
+        <tr>
+            <td><a href="../html/index.html"><img src="../imagens/logo.png"></a></td>
+            <td align="center">QUEM SOMOS</td>
+            <td align="center">CURSOS ONLINE</td>
+            <td align="center">GAMA EXPERIENCE</td>
+            <td align="center">PARA EMPRESAS</td>
+            <td align="center"><a href="../html/contato.html">CONTATO</a></td>
+            <td align="center">CONTEÚDO</td>
+        </tr>
+    </table>
+
+    <form id="form_contato" method="POST">
+        <!--fieldset para encapsular o formulario e deixar responsivo-->
+        <fieldset>
+            <legend><b>Preencha nosso formulário para realizar um curso conosco</b></legend><br>
+        <!--required força o preenchimento, não deixa enviar em branco-->
+        <label>Nome: </label><input type="text" name="nome" required><br><br>
+        <label>Email: </label><input type="email" name="email" required><br><br>
+        <label>Senha: </label><input type="password" name="senha" required><br><br>
+        <label>Gênero: </label>
+            <input type="radio" name="opcao" value="masculino" /> <span>Masculino</span>
+            <input type="radio" name="opcao" value="feminino" /> <span>Feminino</span>
+            <input type="radio" name="opcao" value="não informado" /> <span>Não informado</span><br><br>
+        <label>Informe a data que deseja cursar: </label><input type="date" name="data" required><br><br>
+        <label>Curso desejado: </label>
+            <!--lista suspensa-->
+            <select required>
+                <option value=""></option>
+                <option value="CSS">CSS</option>
+                <option value="HTML">HTML</option>
+                <option value="Java Script">Java Script</option>
+                <option value="XML">XML</option>
+            </select><br><br>
+        <label>Período desejado: </label>
+            <!--checkbox-->
+            <input type="checkbox"  name="opcao" value="manhã"> <span>Manhã</span>
+            <input type="checkbox"  name="opcao" value="tarde"> <span>Tarde</span>
+            <input type="checkbox"  name="opcao" value="noite"> <span>Noite</span><br><br>
+        <label>Mensagem: </label><br>
+            <textarea cols="40" rows="4" name="mensagem"></textarea><br><br>
+        <label>Comprovante de residência: </label><input type="file" name="arquivo"><br><br>
+        
+        <!--botao de validação-->
+        <input type="submit" value="Enviar">
+    </fieldset>
+    </form>
+</body>
+</html>

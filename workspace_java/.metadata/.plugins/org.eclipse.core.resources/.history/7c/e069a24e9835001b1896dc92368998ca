@@ -1,0 +1,32 @@
+
+public class LojaVirtual {
+	public static void main(String args[]) {
+		Produto p1 = new Produto();
+		Produto p2 = new Produto();
+		Produto p3 = new Produto();
+		
+		p1.codigo = 1;
+		p1.nome = "Celular";
+		p1.preco = 3500.0;
+		p1.departamento = "Eletronicos";
+		
+		p2.codigo = 2;
+		p2.nome = "Microondas";
+		p2.preco = 500.0;
+		p2.departamento = "Eletrodomesticos";
+		
+		p3.codigo = 3;
+		p3.nome = "Notebook";
+		p3.preco = 7000.0;
+		p3.departamento = "Eletronicos";
+		
+		System.out.println("----  PRODUTO  ----");
+		p1.imprimir();
+		System.out.println("---- COM DESCONTO ----");
+		p1.aplicarDesconto(5.0);
+		
+		
+		
+	}
+
+}

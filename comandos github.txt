@@ -1,0 +1,26 @@
+comandos de setup do usuario (só se mudar de maquina)
+git config --global user.name DuGarcia7
+git config --global user.email carlosed...
+
+
+=============================================================
+
+comandos de repositorio (toda vez que criar projeto ou alterar aquivos)
+(so add arquivos fonte, nao ass class)
+cd desktop
+cd (nome da pasta) java
+dir
+git init
+git remote add origin (colar link do github do quick setup)
+git add*.java
+git status (para verificar)
+git commit -m "primeiro commit"
+git push origin master
+
+=============================================================
+
+comandos de repositorio (subir o sistem na produção)
+toda vez que alterar o codgio
+git add .
+git commit -m "mensagem"
+git push

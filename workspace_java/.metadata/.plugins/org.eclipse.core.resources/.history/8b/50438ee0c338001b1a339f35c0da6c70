@@ -1,0 +1,13 @@
+package core;
+
+public class Multipla extends QuestaoSimples {
+	
+	private String alternativa;
+
+	public Multipla(String enunciado, String resposta, String alternativa) {
+		super(enunciado, resposta);
+		this.alternativa = alternativa;
+	}
+	
+
+}

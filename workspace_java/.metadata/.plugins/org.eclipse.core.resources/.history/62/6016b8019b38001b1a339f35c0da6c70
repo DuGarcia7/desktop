@@ -1,0 +1,27 @@
+package core;
+
+public class ContaEspecial extends Conta {
+	private double limite;
+	
+	public boolean saque(double valorSaque) {
+		if (saldo + limite >= valorSaque) {
+			saldo = saldo - valorSaque;
+			return true;
+		}
+		return true;
+	}
+	public void deposito(double valorDeposito) {
+		saldo += valorDeposito;
+	}	
+
+	public double getLimite() {
+		return limite;
+	}
+
+	public void setLimite(double limite) {
+		this.limite = limite;
+	}	
+	public String toString() {
+		return "Nome: "+nome+"\nCPF: "+cpf+"\nConta: "+numConta+"\nSaldo: "+String.format("%.2f", saldo);
+	}
+}

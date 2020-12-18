@@ -1,0 +1,25 @@
+package core;
+
+public class ComDica extends QuestaoSimples {
+	
+	private String dica;
+
+	public ComDica(String enunciado, String resposta, String dica) {
+		super(enunciado, resposta);
+		this.dica = dica;
+	}
+	
+	public String aplicarQuestao(String questao) {
+		questao = enunciado;
+		System.out.println("Dica: "+dica);
+		return questao;
+	}
+	
+	public boolean corrigirQuestao(String respostaQuestao) {
+		if (respostaQuestao.equals(resposta)) {
+			return true;
+		}
+		return false;
+	}
+	
+}

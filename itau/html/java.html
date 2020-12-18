@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Script</title>
+
+<!--importanto a funcao.js do diretório-->
+<script type="text/javascript" src="../js/funcao.js"></script>
+
+</head>
+<body>
+
+    <!--<input type="buttom" onclick="msn()" value="Clique para o prêmio">-->
+
+    <form id="FormUser" method="POST">
+        Nome:<input type="text" name="nome"><br><br>
+        Email:<input type="text" name="email"><br><br>
+        Senha:<input type="password" name="senha"><br><br>
+
+        <input type="submit" onclick="return validar()" value="Enviar">
+
+    </form>
+    
+</body>
+</html>

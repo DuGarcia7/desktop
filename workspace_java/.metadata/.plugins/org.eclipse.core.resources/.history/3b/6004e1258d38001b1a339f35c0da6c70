@@ -1,0 +1,30 @@
+package model;
+
+//o operador EXTENDS pode ser lido como: a classe ESTUDANTE possui TUDO que há na classe PESSOA
+//mais as suas infos específicas
+
+public class Estudante extends Pessoa {
+	private String curso;
+	private int numMatricula;
+	
+	
+	public String exibirInfo() {
+		String resultado = "Nome: "+nome+ "/nemail: "+email+"/ntelefone: "+telefone;
+		return resultado;
+	}
+	
+	public String getCurso() {
+		return curso;
+	}
+	public void setCurso(String curso) {
+		this.curso = curso;
+	}
+	public int getNumMatricula() {
+		return numMatricula;
+	}
+	public void setNumMatricula(int numMatricula) {
+		this.numMatricula = numMatricula;
+	}
+
+}
+

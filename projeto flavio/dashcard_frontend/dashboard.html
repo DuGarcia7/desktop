@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link href="index.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="dashboard.js"></script>
+</head>
+<body onload="carregarInfo()">
+    <div class="container">
+        <div class="row">
+            <div class="col-3">
+                <img src="icon.png">
+                <label class="titulo">DashCard System</label>
+            </div>
+            <div class="col-6"></div>
+            <div class="col-3">
+                <nav class="nav ">
+                    <a class="nav-link active" href="index.html"><img src="home.png"></a>
+                    <a class="nav-link" href="agentes.html"><img src="relatorio.png"></a>
+                    <a class="nav-link" href="logout.html"><img src="logout.png"></a>
+                </nav>
+            </div>
+            </tr>
+            </table>
+        </div>
+    </div>
+    <br>
+    <br>
+    <div class="row">
+        <div class="col-2"></div>
+        <div class="col-8">
+            <div>Parceiro</div>            
+            <div id="infoAgente" class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" style="border-style:solid;">
+                
+            </div>
+            <br>
+        </div>
+        <div class="col-2"></div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-2"></div>
+        <div class="col-8">
+            <div>Sucessos</div>  
+            <div id="infoSucesso" class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" style="border-style:solid;">
+            </div>
+        </div>
+        <div class="col-2"></div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-2"></div>
+        <div class="col-8">
+            <div>Fracassos</div>  
+            <div id="infoFalha" class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" style="border-style:solid;">
+            </div>
+        </div>
+        <div class="col-2"></div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-2"></div>
+        <div class="col-8">
+            <div>Fraudes</div>  
+            <div id="infoFraude" class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" style="border-style:solid;">
+            </div>
+        </div>
+        <div class="col-2"></div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>

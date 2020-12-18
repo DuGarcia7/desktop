@@ -1,0 +1,17 @@
+package core;
+
+public class ComDica extends QuestaoSimples {
+	
+	private String dica;
+
+	public ComDica(String enunciado, String resposta, String dica) {
+		super(enunciado, resposta);
+		this.dica = dica;
+	}
+	
+	public String aplicarQuestao() {
+		return enunciado+"\nDica: "+dica;
+	}
+	
+	
+}

@@ -1,0 +1,33 @@
+package userInterface;
+
+import core.CartaoCB;
+import core.CartaoPP;
+
+public class Festa {
+	public static void main(String args[]) {
+		CartaoPP pp1 = new CartaoPP("123","Roberto Araujo",2025,02);
+		CartaoPP cb1 = new CartaoCB("456","Larissa Campos",2022,05,"gold");
+		
+		pp1.deposito(100.0);
+		cb1.deposito(200.0);
+		
+		if(pp1.compra(50.5)){
+			System.out.println("Compra aprovada no cartao "+ pp1.getNumCartao());
+		}
+		else {
+			System.out.println("Saldo insuficiente no cartao "+pp1.getNumCartao());
+		}
+		System.out.println(pp1);
+		
+			
+		if(cb1.compra(80.0)) {
+			System.out.println("Compra aprovada no cartao "+ cb1.getNumCartao());
+		}
+		else {
+			System.out.println("Saldo insuficiente no cartao "+cb1.getNumCartao());
+		}
+		System.out.println(cb1);
+		
+	}
+	
+}

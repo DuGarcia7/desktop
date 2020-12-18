@@ -1,0 +1,36 @@
+package userInterface;
+
+import core.Conta;
+import core.ContaEspecial;
+
+public class Banco {
+	public static void main(String args[]) {
+		Conta c1 = new Conta("Eduardo", "987.654.321-00", 1234);
+		ContaEspecial ce1 = new ContaEspecial();
+		
+		/*
+		c1.setNome("Eduardo");
+		c1.setCpf("987654321-23");
+		c1.setNumConta(1234);*/
+		c1.deposito(50000);
+		System.out.println(c1);
+		
+		if (c1.saque(10000)) {
+			System.out.println("Saque autorizado na conta "+c1.getNumConta());
+		}
+		else {
+			System.out.println("Saldo insuficiente na conta "+c1.getNumConta());
+		}
+		
+		ce1.setNome("Mariana");
+		ce1.setCpf("987654321-23");
+		ce1.setNumConta(4321);
+		ce1.deposito(30000);
+		ce1.setLimite(2000);
+		ce1.saque(31000);
+		
+		System.out.println(ce1);
+	}
+	
+
+}

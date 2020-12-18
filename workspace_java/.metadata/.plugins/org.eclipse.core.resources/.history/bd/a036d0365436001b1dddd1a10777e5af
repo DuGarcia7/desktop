@@ -1,0 +1,27 @@
+package userInterface;
+
+import core.Combustivel;
+import javax.swing.JOptionPane;
+
+public class Posto {
+	public static void main(String args[]) {
+		Combustivel c1,c2,c3;
+		
+		c1 = new Combustivel();
+		c2 = new Combustivel();
+		c3 = new Combustivel();
+		
+		c1.setTipoCombustivel("Gasolina");
+		c1.setValorLitro(4.20);
+		
+		c1.abastecerPorLitro(20);
+		System.out.println(c1.exibirRecibo());
+		JOptionPane.showMessageDialog(null,c1.exibirRecibo());
+		
+		c1.abastecerPorValor(100);
+		System.out.println(c1.exibirRecibo());
+		
+				
+	}
+
+}

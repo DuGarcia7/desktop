@@ -1,0 +1,33 @@
+package userInterface;
+
+import core.QuestaoSimples;
+import core.Multipla;
+import core.ComDica;
+
+public class ProvaOficial {
+	public static void main(String args[]) {
+		
+		QuestaoSimples prova [];
+		prova = new QuestaoSimples [3];
+		
+		prova [1] = new QuestaoSimples ("Qual o nome do(a) professor(a) do curso?","Isidrao");
+		prova [2] = new Multipla ("Qual o nome do(a) professor(a) do curso","Isidrao","Britao","Isidrao","Luciana","Maria");
+		prova [3] = new ComDica ("Qual o nome do(a) professor(a) do curso","Isidrao","Torce do XV de Jau");
+		
+		for (int cont=0 ; cont <= prova.length ; cont++) {
+			prova[cont].aplicarQuestao();
+		}
+		
+		for (int cont=0 ; cont<= prova.length ; cont++) {
+			if(prova[cont].corrigirQuestao("Isidrao")) {
+				System.out.println("Resposta correta");
+			}
+			else {
+				System.out.println("Resposta incorreta. Tente de novo!");
+			}
+		}
+		
+				
+	}
+
+}

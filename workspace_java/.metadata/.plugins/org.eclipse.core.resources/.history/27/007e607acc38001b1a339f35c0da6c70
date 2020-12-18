@@ -1,0 +1,34 @@
+package userInterface;
+
+import core.QuestaoSimples;
+import core.Multipla;
+import core.ComDica;
+import java.util.Scanner;
+
+public class ProvaOficial {
+	public static void main(String args[]) {
+		Scanner teclado = new Scanner(System.in);		
+		
+		QuestaoSimples prova [];
+		prova = new QuestaoSimples [3];
+		
+		prova [0] = new QuestaoSimples ("Qual o nome do(a) professor(a) do curso?","Isidrao");
+		prova [1] = new Multipla ("Qual o nome do(a) professor(a) do curso","Isidrao","Britao","Isidrao","Luciana","Maria");
+		prova [2] = new ComDica ("Qual o nome do(a) professor(a) do curso","Isidrao","Torce do XV de Jau");
+		
+		for (int cont=0 ; cont < prova.length ; cont++) {
+			System.out.println(prova[cont].aplicarQuestao());
+			String resposta = teclado.nextLine();
+			if(prova[cont].corrigirQuestao(resposta)) {
+				System.out.println("Resposta "+cont+" correta");
+			}
+			else {
+				System.out.println("Resposta "+cont+" incorreta. Tente de novo!");
+			}
+		}
+		
+		teclado.close(); //deve ser sempre o último comando do cógido;
+								
+	}
+
+}

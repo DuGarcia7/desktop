@@ -1,0 +1,30 @@
+
+public class banco {
+	public static void main(String args[]) {
+		contaBancaria c1,c2,c3;
+		
+		c1 = new contaBancaria();
+		c2 = new contaBancaria();
+		c3 = new contaBancaria();
+		
+		c1.setNumeroConta(001);
+		c1.setTitular("Mariana Rodrigues Faria");
+		c1.setCpfTitular("367.258.903-44");
+		c1.saque(2000.0);
+		System.out.println(c1.exibirConta());
+		
+		c2.setNumeroConta(001);
+		c2.setTitular("Lucas Moreira");
+		c2.setCpfTitular("447.582.655-32");
+		c2.saque(5000.0);
+		System.out.println(c2.exibirConta());
+		
+		c3.setNumeroConta(001);
+		c3.setTitular("Bruna Santos Gimenez");
+		c3.setCpfTitular("234.754.436-72");
+		c3.saque(50000.0);
+		System.out.println(c3.exibirConta());
+				
+	}
+
+}

@@ -1,0 +1,17 @@
+package userInterface;
+
+import core.Conta;
+
+public class Banco {
+	public static void main(String args[]) {
+		Conta c1 = new Conta();
+		
+		c1.setNome("Eduardo");
+		c1.setCpf("987654321-23");
+		c1.setNumConta(1234);
+		c1.deposito(50000);
+		System.out.println(c1.exibirInfo());
+	}
+	
+
+}
